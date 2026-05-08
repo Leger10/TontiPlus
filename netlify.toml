@@ -1,5 +1,5 @@
 [build]
-  command = "npm run netlify-build"
+  command = "npm install && npx vite build --outDir dist"
   publish = "dist"
 
 [build.environment]
