@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build:netlify"
+  command = "npm run netlify-build"
   publish = "dist"
 
 [build.environment]
@@ -12,5 +12,6 @@
 
 [[headers]]
   for = "/assets/*"
+
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
